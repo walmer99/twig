@@ -1,0 +1,19 @@
+{%extends 'base.html.twig'%}
+
+{% block title %}
+Mes chats
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+    {%  for product in products %}
+        <div class = "col-4">
+            <div class="card">
+                <div class="card-body">
+                    {{ product }}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}
